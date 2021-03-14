@@ -9,7 +9,7 @@ WeCanCode is a website that is hosted by Amazon Amplify and will deploy code tha
 If you are still kind of confused, don't sweat it! This is all about inclusion. Anyone can contribute as long as they don't add any hateful, offensive, or otherwise inappropriate content. What is inappropriate will be determined on a case by case basis by those who have merge access.
 
 # How To Get Started
-To Get started Fork the this repository so you can have a local copy and make changes. Don't know what that means? It's okay, check out the **Forking** section below. Then you can create a **Pull Request** and have your code **Merged** into the main branch. This will kick off a process handled by **Amazon Amplify** which will publish the code to the website WeCanCode.club. You will then be able to see your updates live on the internet! Feel free to share in your portfolio and with family and friends. By having this repository on your GitHub profile it will also show future employers work that you have done to collaborate with others. 
+To Get started Fork the this repository so you can have a local copy and make changes. Don't know what that means? It's okay, check out the **Forking** section below. Then you can create a **Pull Request** and have your code **Merged** into the main branch. This will kick off a process handled by **Amazon Amplify** which will publish the code to the website WeCanCode.club. You will then be able to see your updates live on the internet! Feel free to share in your portfolio and with family and friends. By having this repository on your GitHub profile it will also show future employers work that you have done to collaborate with others.
 
 ## Forking
 In the upper right hand side of this page, underneath your profile picture, is a badge that says "Fork". What this does is creates a "Fork" or a copy of this repository. Think of it like making a copy of a word document that you and a friend are working on for class. By making a copy you can go off and make your own changes to your section of the paper. Then when you are ready to combine your changes with your friends copy, then you can create a **Pull Request** (as detailed out below). This is a request to *pull* in your changes to the code (or in this metaphor the work you did on the paper). Once someone with **Merge** access does a **Code Review** and **Approves your Pull Request** then it will be **Merged** into the main branch. Think of the main branch like the final copy of your paper that you are going to hand in to the teacher.
@@ -37,6 +37,35 @@ While looking at your pull request you saw this come up as a conflict. What shou
 As you can see, you preferred *A*'s change to the beginning wording of the sentence, but wanted to make sure you fix to "couldnt" and the comma after "but" was carried over into the final copy of the paper.
 
 See! Merge Conflicts aren't that scary...okay they can be.
+
+## Adding Your Code
+Once you have the repository forked you need to clone (download) that code onto your computer. This can be done two ways. The first way is through the terminal (command line). You should see a green button near the top of the page that says "Code". Once you click that you will see some options.
+
+### SSH
+> SSH allows you to clone the repository using an SSH key pair. If you are familiar with GitHub this is the usual method
+
+If you would like to use this method, but have not before make sure to checkout GitHub's [documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) about adding SSH keys that will create a secure connection between your computer and your GitHub account. Once you do that you are ready to clone. Here are some basic commands for you to follow in your terminal. If you have a Development folder, change your directory to that. Otherwise make sure you are in whatever folder you want this project to live.
+
+    ~yourComputer: cd Development
+    ~yourComputer/Development: git clone git@github.com:WeCanCode-Club/WeCanCode.git
+    ~yourComputer/Development: cd WeCanCode
+    ~yourComputer/Development/WeCanCode: ls -al
+
+That last command is essentially "list all" which will show you all the files in that folder you just downloaded to your computer.
+
+
+### HTTPS
+>HHTPS will allow you to clone the repository using your GitHub login
+
+TBD
+
+### CLI
+>GitHub CLI will allow you to clone the repository using GitHub's official CLI tool
+
+TBD
+
+### GitHub Desktop
+The other method you can use is by using the GitHub Desktop app. This will utilize their GUI (Graphic User Interface) to manage the local copy of the repository. If you click this option it will take you to a page to download the GitHub Desktop app or open it on your computer.
 
 
 ## Pull Requests
