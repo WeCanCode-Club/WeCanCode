@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.logo {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  padding: 0 1rem;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.logo-title-top {
+  font-size: 16px;
+}
+
+.logo-title-bottom {
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+/* Add a gray background åcolor and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
