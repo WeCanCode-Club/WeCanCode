@@ -4,6 +4,7 @@
 .navbar {
   font-family: 'Roboto', sans-serif;
   font-size: medium;
+  text-indent: 0;
   margin-bottom: 0;
   border-radius: 0;
 }
