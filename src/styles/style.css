@@ -2,7 +2,7 @@
 
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-  font-family: 'Sedgwick Ave', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: medium;
   margin-bottom: 0;
   border-radius: 0;
