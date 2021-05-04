@@ -2,9 +2,8 @@
 
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-  font-family: 'Sedgwick Ave Display', sans-serif;
+  font-family: 'Sedgwick Ave', sans-serif;
   font-size: medium;
-  text-indent: 0;
   margin-bottom: 0;
   border-radius: 0;
 }
