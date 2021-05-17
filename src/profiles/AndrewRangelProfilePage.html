@@ -6,22 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="../styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      margin-left: 0px;
-    }
-
     body {
       background-color: #F3F3F3;
       color: #283747;
       font-family: 'Dosis', sans-serif;
-
       text-indent: 10px;
     }
 
@@ -43,33 +36,39 @@
       margin-left: 10px;
       color: #DE354C;
     }
-
-
   </style>
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">We Can Code</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="../../index.html">
+          <img
+            src="../assets/weCanCodeLogo-sm.png"
+            alt="Open laptop with code written on screen."
+            class="logo-img"
+          />
+          <span class="logo-title">
+            <span class="logo-title-top">&lt;/WeCanCode&gt;</span>
+            <span class="logo-title-bottom">club</span>
+          </span>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="../../index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+  </nav>
 <h1 class="name">Andrew Rangel</h1>
 <h3 class="title">About Me</h3>
 I am a self taught mobile developer who has a passion for learning and supporting other people on their journey.
@@ -91,7 +90,6 @@ I am a self taught mobile developer who has a passion for learning and supportin
 
 <h3 class="title">What I Hope To Learn</h3>
 Web Development! I have tried to learn web development in the past, but have given up and gone back to mobile development. I am hoping this forces me to really build my skillset.
-
 
 <footer class="container-fluid text-center">
   <p>Thank you for visiting my page!</p>

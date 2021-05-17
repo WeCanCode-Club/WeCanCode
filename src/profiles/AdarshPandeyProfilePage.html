@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adarsh Pandey Profile</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/049c2889d3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body{
+        --background-color: white;
+        --label-bg: var(--text-color);
+        --text-color: black;
+        --black-icons-color: black;
+
+        background-color: var(--background-color);
+        margin: 0;
+        padding: 0;
+        transition: all 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      body.dark{
+        --background-color: rgb(5, 5, 5);
+        --label-bg: deepskyblue;
+        --text-color: white; 
+        --black-icons-color: rgb(223, 223, 223);
+      }
+      .section{
+        font-family: 'Raleway', sans-serif;
+        color: var(--text-color);
+      }
+      #name{
+        margin: 3.5vh 1.7vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+      }
+      label{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: space-between;
+        top: 12vh;
+        right: 3vw;
+        height: 26px;
+        width: 50px;
+        background-color: var(--label-bg);
+        border-radius: 25px;
+        padding: 5px;
+      }
+      #checkbox{
+        display: none;
+      }
+      #checkbox:checked + label #ball{
+        transform: translateX(24px);
+      }
+      .fa-moon{
+        color: yellow;
+      }
+      .fa-sun{
+        color: #f39c12;
+      }
+      #ball{
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .fa-instagram, .fa-linkedin, .fa-github{
+        font-size: 2.2em;
+        margin-left: 0.3vw;
+        transition: all 700ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .fa-instagram:hover, .fa-linkedin:hover, .fa-github:hover{
+        transform: scale(1.1, 1.1);
+      }
+      .fa-instagram{
+        margin-left: 1.7vw;
+        color: var(--black-icons-color);
+      }
+      .fa-linkedin{
+        color: dodgerblue;
+      }
+      .fa-github{
+        color: var(--black-icons-color);
+      }
+      .title{
+        margin: 3.5vh 1.7vw;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+      }
+      p{
+        margin-left: 1.7vw;
+      }
+      p, ul{
+        font-size: medium;
+      }
+      footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        display: flex;
+  	    justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 11vh;
+        background-color: #121212;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+      }
+      @media screen and (min-height: 623px) and (min-width: 768px){
+        footer{
+          position: fixed;
+        }
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="../../index.html">
+              <img
+                src="../assets/weCanCodeLogo-sm.png"
+                alt="Open laptop with code written on screen."
+                class="logo-img"
+              />
+              <span class="logo-title">
+                <span class="logo-title-top">&lt;/WeCanCode&gt;</span>
+                <span class="logo-title-bottom">club</span>
+              </span>
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="../../index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="section">
+      <h1 id="name">Adarsh Pandey</h1>
+      <input type="checkbox" name="checkbox" id="checkbox" onclick="darkModeToggle()">
+      <label for="checkbox">
+       <i class="fas fa-moon"></i>
+       <i class="fas fa-sun"></i>
+       <div id="ball"></div>
+      </label>
+      <div>
+        <a href="https://www.instagram.com/cerealnotfound/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adarsh-pandey-a07779202"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/CerealNotFound"><i class="fab fa-github"></i></a>
+      </div>
+      <h3 class="title">About Me</h3>
+      <p class="paragraphs">I am a 13 year old self taught frontend web developer in the making. You may know me as cerealnotfound <span class="emojis">&#128521;</span></p>    
+
+      <h3 class="title">My skills</h3>
+      <ul>
+        <li>A little bit of CSS along with HTML</li>                                   
+        <li>Basics of JavaScript</li>
+      </ul>
+
+      <h3 class="title">My hobbies</h3>
+      <ul>
+       <li>I really like reading books, currently reading Einstein: His Life and Universe - Walter Isaacson</li>
+        <li>I love to learn stuff <span class="emojis">&#128525;</span></li>
+        <li>I also love making friends around the world <span class="emojis">&#128522;</span></li>
+      </ul>
+
+      <h3 class="title">What I hope to learn</h3>
+      <p>Web development! I really hope that I learn web developement during this process and get a job as a frontend web developer for now.</p>
+    </section>
+    <footer class="container-fluid text-center">
+        <p id="footer-paragraph">Thank you for visiting my page!</p>
+    </footer>
+
+    
+    <script>
+      const chk = document.querySelector('#checkbox')
+      function darkModeToggle() {
+          document.body.classList.toggle('dark')
+      }
+    </script>
+</body>
+</html>
