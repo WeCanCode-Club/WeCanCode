@@ -2,8 +2,6 @@
 
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
-  font-family: 'Roboto', sans-serif;
-  font-size: medium;
   margin-bottom: 0;
   border-radius: 0;
 }
@@ -16,6 +14,8 @@
 
 .logo-img {
   padding: 0 1rem;
+  width: 120px;
+  height: auto;
 }
 
 .logo-title {
@@ -35,8 +35,69 @@
   font-family: 'Sedgwick Ave', cursive;
 }
 
+/* add a background image  and position it layout*/
+.jumbotron{
+  background: url(../assets/pexels-photo-3182826.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 545px;
+  background-position-y: center;
+  position: relative;
+  z-index: -2;
+}
+
+/* change the coding text to red */
+.coding-text{
+  color: #FF0000;
+}
+
+/* add background overlay */
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 545px;
+  z-index: -1;
+}
+/* add the layout position order */
+.hero-bg{
+  z-index: 1;
+  color: #fff;
+}
+
+/* add font-weight and margin */
+.hero-headline{
+  font-weight: 500;
+  margin: 70px 0 30px!important;
+}
+
+
+.hero-decription{
+  font-size: 1.7rem !important;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
 /* Add a gray background åcolor and some padding to the footer */
 footer {
   background-color: #f2f2f2;
   padding: 25px;
 }
+
+/* add display for bigger screen above 600px */
+@media screen and (min-width: 700px) {
+
+  .hero-headline{
+    font-weight: 700;
+  }
+
+  .hero-decription{
+    font-size: 1.7rem !important;
+    width: 650px;
+    margin: 0 auto;
+    line-height: 2.8rem;
+  }
+}
+
